@@ -1,0 +1,28 @@
+<ion-view title="Update Todo">
+  <ion-content has-header="true" padding="true">
+      <div ng-controller="DetailedTodoCtrl">
+          <form ng-submit="update()" id="authentication-form">
+              <div class="list">
+                  <label class="item item-input">
+                      <input type="text" ngRequired="true" ng-model="todo.title"
+                             placeholder="Title"/>
+                  </label>
+                  <label class="item item-input">
+                      <input type="text" ngRequired="true" ng-model="todo.body"
+                             placeholder="Body"/>
+                  </label>
+                  <ion-checkbox ng-model="todo.done">Done</ion-checkbox>
+
+              </div>
+              <div class="buttons-panel">
+                  <a class="button button-positive icon icon-right ion-chevron-right" ng-click="update()">
+                      Update
+                  </a>
+                  <a class="button button-assertive icon icon-right ion-chevron-right" ng-click="remove()">
+                      Delete
+                  </a>
+              </div>
+          </form>
+      </div>
+  </ion-content>
+</ion-view>

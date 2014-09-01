@@ -1,0 +1,27 @@
+<ion-view title="Todo Application">
+    <ion-content class="has-header padding">
+        <div id="authentication" class="authentication">
+            <div ng-controller="SignOnCtrl">
+                <form ng-submit="submitQuery()" id="authentication-form">
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="text" ngRequired="true" ng-model="auth.phone"
+                                   placeholder="Phone Number"/>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            Phone has to be with + and country code. No spaces. Otherwise we won't be able send SMS notification
+                        </div>
+                    </div>
+                    <div class="buttons-panel">
+                        <a class="button icon icon-right ion-chevron-right" ng-click="doAuth()">
+                            Sign In
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+

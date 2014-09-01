@@ -1,0 +1,21 @@
+<ion-view title="New Todo">
+  <ion-content has-header="true" padding="true">
+      <div ng-controller="NewTodoCtrl">
+          <form ng-submit="doCreateNew()">
+              <div class="list">
+                  <label class="item item-input">
+                      <input type="text" ngRequired="true" ng-model="todo.title" placeholder="Title"/>
+                  </label>
+                  <label class="item item-input">
+                      <input type="text" ngRequired="true" ng-model="todo.body" placeholder="Body"/>
+                  </label>
+              </div>
+              <div class="buttons-panel">
+                  <a class="button icon icon-right ion-chevron-right" ng-click="doCreateNew()">
+                      Save
+                  </a>
+              </div>
+          </form>
+      </div>
+  </ion-content>
+</ion-view>
