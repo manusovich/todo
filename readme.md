@@ -10,7 +10,8 @@ Some API are described below, but this list doesn't show all possibilities. Plea
 
 ### /session
 
-I had to add simple sessions, just for be able send sms notifications to users. Session has only one key - phone. So it means that anyone can create as many sessions as he wants. We don't care.  
+* I had to add simple sessions, just for be able send sms notifications to users. Session has only one key - phone. So it means that anyone can create as many sessions as he wants. We don't care.  
+* There is validation for some API calls but not for all of them. 
 
 #### Create new session
 
@@ -80,6 +81,8 @@ Cache-Control: no-cache
 ```
 
 ## Front End
+
+Front end has been built with ionic framework. Search on todo list doesn't use search from rest api. It is just UI filter.
 
 ![](https://dl.dropboxusercontent.com/u/22762275/todo/Screen%20Shot%202014-09-01%20at%203.49.11%20PM.png)
 ![](https://dl.dropboxusercontent.com/u/22762275/todo/Screen%20Shot%202014-09-01%20at%203.49.19%20PM.png)
