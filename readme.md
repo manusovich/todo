@@ -1,11 +1,12 @@
 # Todo Test Application
 
 Application deployed on heroku: https://mashapetodo2.herokuapp.com.
-Before using application, you have to verify your phone in Twilio system. We are using trial account and that is why you have to do that. Otherwise application will not be able send SMS notification. Add your number and verify it, you can do here https://www.twilio.com/user/account/phone-numbers/verified
+Before using application, you have to verify your phone in Twilio system. We are using trial account and that is why you have to do that. Otherwise application will not be able send SMS notification. You can add & verify your number on this page https://www.twilio.com/user/account/phone-numbers/verified
 
 ## Rest API
 
 Main prefix for rest api is "/api". We have 2 services /api/session and /api/todo
+Some API are described below, but this list doesn't show all possibilities. Please look at the code. 
 
 ### /session
 
@@ -44,6 +45,7 @@ Cache-Control: no-cache
 { "title":"titlea", "body":"bodya" }
 ```
 #### Update todo
+When you making update todo and status is changing from done=false to done=true, application sends SMS notification about that to the phone number from session.
 ```
 PUT /api/todo HTTP/1.1
 Host: mashapetodo2.herokuapp.com
