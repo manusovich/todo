@@ -5,8 +5,9 @@ Before using application, you have to verify your phone in Twilio system. We are
 
 ## Rest API
 
-Main prefix for rest api is "/api". We have 2 services /api/session and /api/todo
-Some API are described below, but this list doesn't show all possibilities. Please look at the code. 
+* Main prefix for rest api is "/api". We have 2 services /api/session and /api/todo
+* Some API are described below, but this list doesn't show all possibilities. Please look at the code. 
+* This API requires cookies. Session token is passing through cookie and you have to make sure that you receiving cookies and sending them back
 
 ### /session
 
